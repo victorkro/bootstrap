@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Sistema de Grillas (Visible y Hidden) Bootstrap</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+</head>
+<body>
+	<div class = "container">
+		<div class="row">
+			<div class="col-xs-6 col-sm-4 col-md-3-col-lg-2 well">
+				Contenido 1
+			</div>
+			<div class="col-xs-6 col-sm-4 col-md-3-col-lg-2 well">
+				Contenido 2
+			</div>
+			<div class="col-xs-6 col-sm-4 col-md-3-col-lg-2 visible-lg well">
+				Utilizando la clase visible, de modo que será solo visible dentro de la clase lg.
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-xs-6 col-sm-4 col-md-3-col-lg-2 well">
+				Contenido 1
+			</div>
+			<div class="col-xs-6 col-sm-4 col-md-3-col-lg-2 well">
+				Contenido 2
+			</div>
+			<div class="col-xs-6 col-sm-4 col-md-3-col-lg-2 hidden-xs well">
+				Este contenido desaparece cuando se llega a un tamaño contemplado en la clase xs.
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-xs-6 col-sm-3 well">
+				Utilizando la clase clearfix, de modo que cuando se tiene mucho contenido en una sección y en otra sección poco contenido, se pueda oranizar de una manera correcta. Para realizar una prueba se puede eliminar el div que posee la clase clearfix, y otra cuando si está presente dicha clase.
+			</div>
+			<div class="col-xs-6 col-sm-3 well">
+				Lorem ipsum dolor sit amet, consectetur.
+			</div>
+			<div class="clearfix visible-xs"></div>
+			<div class="col-xs-6 col-sm-3 well">
+				Lorem ipsum dolor sit amet, consectetur.
+			</div>
+			<div class="col-xs-6 col-sm-3 well">
+				Lorem ipsum dolor sit amet, consectetur.
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-4 well">
+				Para utilizar offset, considerar que siempre primero se ejecuta la clase offset.
+			</div>
+			<div class="col-md-4 col-md-offset-4 well">
+				En este caso se ejectua offset 4 y se crea después los 4 espacios de la columna.
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-3 col-md-offset-3 well">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, accusamus.
+			</div>
+			<div class="col-md-3 col-md-offset-3 well">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, molestiae.
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6 col-md-offset-3 well">
+				En este caso offset 3, columna 6 y el resto bootstrap lo deja con vacio.
+			</div>
+		</div>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
